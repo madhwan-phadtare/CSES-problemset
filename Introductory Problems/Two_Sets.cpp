@@ -7,7 +7,7 @@ int main()
 {
     int n;
     cin >> n;
-    long long sum = (n*(n-1))/2;
+    long long sum = (n*(n+1))/2;
     if(sum%2==0)
     {
         cout<<"YES"<<endl;
