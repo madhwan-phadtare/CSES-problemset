@@ -7,23 +7,17 @@ int main()
 {
     int n;
     cin >> n;
-    int zero = 0, five = 0, two = 0;
-    for (int i = 1; i <= n; i++)
+    
+    int f = 5;
+    int sum = 0;
+
+    while((n/f)>0)
     {
-        int temp = i;
-        while(temp%10==0 && temp>0)
-        {
-            temp = temp/10;
-            zero++;
-        }
-        while(temp%5==0 && temp>0)
-        {
-            temp = temp/5;
-            five++;
-        }
+        sum += n/f;
+        f = f*5;
     }
 
-    cout << zero + five;
+    cout<<sum;
 
     return 0;
 }
